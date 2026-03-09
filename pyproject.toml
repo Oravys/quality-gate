@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quality-gate"
+version = "0.1.0"
+description = "Lightweight NISQA-proxy audio quality scorer for speech signals"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Eliot Cohen Bacrie"},
+]
+keywords = [
+    "audio",
+    "speech",
+    "quality",
+    "MOS",
+    "NISQA",
+    "signal-processing",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.22",
+]
+
+[project.optional-dependencies]
+full = ["scipy>=1.9"]
+dev = [
+    "scipy>=1.9",
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Oravys/quality-gate"
+Documentation = "https://github.com/Oravys/quality-gate#readme"
+Repository = "https://github.com/Oravys/quality-gate"
+Issues = "https://github.com/Oravys/quality-gate/issues"
+
+[tool.setuptools.packages.find]
+include = ["quality_gate*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
