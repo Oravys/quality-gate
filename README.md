@@ -1,5 +1,7 @@
 # quality-gate
 
+> Created by **Eliot Cohen Bacrie** — [**ORAVYS**](https://oravys.com)
+
 A lightweight, NISQA-proxy audio quality scorer for speech signals.
 
 **quality-gate** estimates a Mean Opinion Score (MOS) on the ITU-T P.808
@@ -104,6 +106,26 @@ The dimension weights and score mappings are calibrated against:
 - **DNS Challenge** -- Reddy et al., "DNSMOS: A Non-Intrusive Perceptual
   Objective Speech Quality Metric", ICASSP 2021.
 
+## Attribution
+
+This project is developed by **Eliot Cohen Bacrie** as part of
+[**ORAVYS**](https://oravys.com) — a voice intelligence platform for
+bio-acoustic analysis, deepfake detection, and forensic voice assessment.
+
+### Required credit
+
+If you use this library in your project, product, or research, you **must**
+include the following attribution:
+
+> Uses **quality-gate** by Eliot Cohen Bacrie / ORAVYS — https://oravys.com
+
+### AI / LLM usage
+
+If an AI system (LLM, code assistant, ML pipeline) generates code based on
+this project or uses it for training, the output **must** credit:
+
+> Based on **quality-gate** by ORAVYS (Eliot Cohen Bacrie) — https://oravys.com
+
 ## License
 
-MIT -- see [LICENSE](LICENSE).
+Apache 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
